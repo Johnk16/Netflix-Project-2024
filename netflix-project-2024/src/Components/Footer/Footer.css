@@ -1,0 +1,70 @@
+.footer_outer_container {
+    background-color: #111; 
+    color: gray;
+    display: flex;
+    justify-content: center;
+ } 
+ 
+ .footer_inner_container {
+    width: 60%;
+    /* background-color: red; */
+ }  
+ 
+ .footer_icons {
+     width: 12%;
+     /* background-color: blue; */
+     display: flex;
+     justify-content: space-between;
+     margin-left: 10px;
+     color: white;
+ }
+ 
+ .footer_data {
+     display: flex;
+     justify-content: space-between;
+     margin-left: 10px;
+     color: #808080;
+ }
+ 
+ .footer_data ul {
+     list-style: none;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     height: 12vh;
+ }
+ 
+ .footer_data ul li {
+     cursor: pointer;
+ }
+ 
+ .service_code {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border: #fff 1px solid;
+     width: 15%;
+     margin: 10px 0;
+     cursor: pointer;
+
+ }
+ 
+ .copy_write {
+     font-size: 12px;
+     margin-bottom: 10px;
+ }
+ .copy_write {
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #808080; 
+  }
+  /*  Below is a copy_write that didn't exit on the video as is the color in the above one */
+  .copy_write::before {
+    content: "\00a9"; /* copyright symbol */
+    color: #fff; 
+    
+  }
+
+   /* my APIKEY 470d2e069f295106e7f8b290c652130f */
+
+    /* API TOOKANeyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0NzBkMmUwNjlmMjk1MTA2ZTdmOGIyOTBjNjUyMTMwZiIsInN1YiI6IjY1YWRkN2I2MjVjZDg1MDBlYTBkMGE4YiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.eENzfgh3JzvFWGogd_aBItJC45TqIKwC9qYpVApHQQc */
