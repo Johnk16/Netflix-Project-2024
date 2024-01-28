@@ -1,10 +1,7 @@
 .App {
+  background-color: black;
   /* text-align: center; we will use it later  */
 }
-*{ margin: 0;
-  padding: 0;
-
-} 
 
 
 
