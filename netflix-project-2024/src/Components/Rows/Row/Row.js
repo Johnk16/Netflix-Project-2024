@@ -13,6 +13,8 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
       const fetchData = async () => {
         try {
           console.log(fetchUrl);
+                  //  fetch('htpps..').then((data)=>data.json()).then((data)=>setMovies(data))
+
           const request = await axios.get(`${fetchUrl}`);
           console.log(request);
           setMovies(request.data.results);
@@ -22,9 +24,14 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
       };
   
       fetchData();
+       // Note that the funcntion below has 3 options: [], [fetchUrl], [another value]
+       //  when it is empty [] it renders every time it is l
   
-    }, [fetchUrl]);
-  
+    }, [fetchUrl]); 
+   
+
+
+    
     
     const handleClick = (movie) => {
       if (trailerUrl) {
@@ -51,10 +58,10 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
     <div className="row">
         <h2>{title}</h2>
     <div className="row_posters">
-      {movies.map((movie) => (
+      {movies?.map((movie) => (
         <img
           key={movie.id}
-          className={`row_poster ${isLargeRow && "row_posterLarge"}`}
+          className={`row_poster ${isLargeRow && "reow_posterLarg"}`}
           src={`${base_url}${isLargeRow ? movie.poster_path : movie.backdrop_path}`}
           alt={movie.name}
           onClick={() => handleClick(movie)} // Add this line for onClick event

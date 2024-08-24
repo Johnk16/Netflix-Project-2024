@@ -23,11 +23,12 @@ transition-timing-function:ease-in;  z-index: 1;
     align-items: center;
 }
 
-.header_left ul {
+/* .header_left ul {
     list-style-type: none;
     display: flex;
     margin: 0;
     padding: 0;
+    
 }
 
 .header_left li {
@@ -46,7 +47,24 @@ transition-timing-function:ease-in;  z-index: 1;
     margin-right: 20px;
     cursor: pointer;
     display: flex;
-}
+} */
+.header_left ul {
+    width: 140%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+  }
+  
+  .header_right ul {
+    width: 140%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+  }
 
 
 

@@ -8,11 +8,12 @@ const RowList = () => {
     <>
 
        <Row
+      // ?  Note that these three (below) are used in Row.js
              title="NETFLIX ORIGNALS"
              fetchUrl={requests.fetchNetflixOriginals} 
              isLargeRow={true}
         />
-       <Row title="Trending Now" fetchUrl={requests.fetchTrending}/>
+       <Row title="Trending Now" fetchUrl={requests.fetchTrending} isLargeRow={false}/>
         <Row title="Top Rated" fetchUrl={requests.fetchTopRatedMovies}/>
         <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies}/>
         <Row title="Horrer Movies" fetchUrl={requests.fetchHorrorMovies}/>
